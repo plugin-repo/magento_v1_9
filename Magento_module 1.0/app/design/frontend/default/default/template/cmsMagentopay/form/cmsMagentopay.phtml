@@ -1,0 +1,26 @@
+
+<?php
+/**
+ Please Do not edit or add any code in this file without permission.
+
+Magento version 1.7.0.2                 CmsMagento Version 1.0
+                              
+Module Version. Cms-1.0                 Module release: September 2017
+
+*/
+
+ 	$data= $this->getQuoteData() ;
+ 
+?>
+
+<fieldset class="form-list">
+    <?php $_code=$this->getMethodCode() ?>
+    <ul id="payment_form_<?php echo $_code ?>" style="display:none">
+        <li>
+            <?php 
+			echo $this->__('You will be redirected to CmsMagento website when you place an order.') ?>
+        </li>
+		<p><img src="<?php echo $this->getSkinUrl('CmsMagento/CmsMagento.gif') ?>"/></p>
+		
+    </ul>
+</fieldset> 
